@@ -36,6 +36,7 @@ class Song
     # self is the Class (Song) . all is @@all 
     # detect iterates over the class {|variable that represents passed in song_name| 
     # passed in song_name is equal to song_name}
+    # BETTER TO USE self.class.all instead of @@all
     @@all.detect{|s| s.name == song_name}
   end 
 
